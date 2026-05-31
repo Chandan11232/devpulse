@@ -14,7 +14,13 @@ const execAsync = promisify(exec);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors({ origin: process.env.FRONTEND_URL || "http://localhost:5173" }));
+app.use(
+  cors({
+    origin:
+      process.env.FRONTEND_URL || "https://devpulse-backend-91x8.onrender.com", // <-- Match your live frontend URL
+    credentials: true,
+  }),
+);
 app.use(express.json());
 
 async function runCoralSQL(sql) {
