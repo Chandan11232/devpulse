@@ -1,0 +1,98 @@
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.table th {
+  text-align: left;
+  padding: 6px 12px;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--border);
+}
+
+.table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.table tbody tr:hover {
+  background: rgba(255,255,255,0.02);
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.prNum {
+  font-family: var(--mono);
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.prTitle {
+  color: var(--text);
+  max-width: 360px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.author {
+  font-family: var(--mono);
+  color: var(--blue);
+  font-size: 12px;
+}
+
+.mono {
+  font-family: var(--mono);
+  color: var(--text-muted);
+}
+
+.badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.low {
+  background: rgba(0, 229, 160, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(0, 229, 160, 0.2);
+}
+
+.medium {
+  background: rgba(255, 209, 102, 0.1);
+  color: var(--yellow);
+  border: 1px solid rgba(255, 209, 102, 0.2);
+}
+
+.high {
+  background: rgba(255, 77, 109, 0.1);
+  color: var(--red);
+  border: 1px solid rgba(255, 77, 109, 0.2);
+}
+
+.empty {
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 24px 0;
+}
